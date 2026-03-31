@@ -6,7 +6,7 @@ const nextConfig = {
       asyncWebAssembly: true,
     };
 
-    // Exclude onnxruntime-node (we only use onnxruntime-web in browser)
+    // Exclude node-specific ONNX runtime (we use onnxruntime-web in browser)
     config.resolve.alias = {
       ...config.resolve.alias,
       "onnxruntime-node": false,
@@ -28,23 +28,6 @@ const nextConfig = {
     }
 
     return config;
-  },
-  async headers() {
-    return [
-      {
-        source: "/(.*)",
-        headers: [
-          {
-            key: "Cross-Origin-Embedder-Policy",
-            value: "credentialless",
-          },
-          {
-            key: "Cross-Origin-Opener-Policy",
-            value: "same-origin",
-          },
-        ],
-      },
-    ];
   },
 };
 
