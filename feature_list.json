@@ -1,0 +1,203 @@
+{
+  "features": [
+    {
+      "id": "F001",
+      "name": "Project Scaffold",
+      "priority": "P0",
+      "status": "complete",
+      "description": "Initialize Next.js 14 with App Router, Tailwind CSS, and base layout",
+      "acceptance_criteria": [
+        "next dev runs without errors",
+        "Tailwind classes render correctly",
+        "Base layout with header, main, footer exists"
+      ]
+    },
+    {
+      "id": "F002",
+      "name": "File Upload Component",
+      "priority": "P0",
+      "status": "complete",
+      "description": "Drag-and-drop zone + click-to-upload with format validation",
+      "acceptance_criteria": [
+        "Drag-and-drop works",
+        "Click to upload works",
+        "Format validation for mp4, m4a, mp3, wav, webm, ogg, mov, avi, flac",
+        "File size display",
+        "500MB max size check",
+        "Clear error messages"
+      ]
+    },
+    {
+      "id": "F003",
+      "name": "Browser-Based Transcription Engine",
+      "priority": "P0",
+      "status": "complete",
+      "description": "Whisper transcription via @xenova/transformers running entirely in browser",
+      "acceptance_criteria": [
+        "Whisper model loads and runs in browser",
+        "Model selection (tiny/small/medium)",
+        "Progress bar during model download and transcription",
+        "Audio extraction from video files",
+        "Multilingual auto-detect"
+      ]
+    },
+    {
+      "id": "F004",
+      "name": "Transcription Output Display",
+      "priority": "P0",
+      "status": "complete",
+      "description": "Show transcription with timestamps, editable text, copy to clipboard",
+      "acceptance_criteria": [
+        "Timestamps displayed",
+        "Editable text areas",
+        "Copy to clipboard button"
+      ]
+    },
+    {
+      "id": "F005",
+      "name": "Download as .txt",
+      "priority": "P0",
+      "status": "complete",
+      "description": "Download transcription as formatted .txt file",
+      "acceptance_criteria": [
+        "Download button works",
+        "Filename format: VoiceScribe_[filename]_[datetime].txt",
+        "Proper header with file info"
+      ]
+    },
+    {
+      "id": "F006",
+      "name": "SEO Optimization",
+      "priority": "P0",
+      "status": "complete",
+      "description": "Meta tags, Open Graph, JSON-LD, sitemap, robots.txt",
+      "acceptance_criteria": [
+        "Page title and description set",
+        "Open Graph tags present",
+        "JSON-LD for SoftwareApplication and FAQPage",
+        "sitemap.xml and robots.txt exist",
+        "Korean hreflang tags"
+      ]
+    },
+    {
+      "id": "F007",
+      "name": "Responsive Design",
+      "priority": "P0",
+      "status": "complete",
+      "description": "Mobile-first responsive design for all breakpoints",
+      "acceptance_criteria": [
+        "Works on mobile (320px+)",
+        "Touch-friendly upload zone",
+        "Hamburger menu on mobile",
+        "Readable on all screen sizes"
+      ]
+    },
+    {
+      "id": "F008",
+      "name": "Adsterra Ad Integration",
+      "priority": "P1",
+      "status": "complete",
+      "description": "Ad placeholder slots for Adsterra network",
+      "acceptance_criteria": [
+        "Top banner slot",
+        "Bottom banner slot",
+        "Native ad slot",
+        "Responsive ad containers",
+        "Non-intrusive placement"
+      ]
+    },
+    {
+      "id": "F009",
+      "name": "Google Sheets Data Collection",
+      "priority": "P1",
+      "status": "complete",
+      "description": "Silent webhook POST on every transcription",
+      "acceptance_criteria": [
+        "POST fires on transcription complete",
+        "Correct payload structure",
+        "Fire-and-forget (non-blocking)"
+      ]
+    },
+    {
+      "id": "F010",
+      "name": "Visitor Counter",
+      "priority": "P1",
+      "status": "complete",
+      "description": "Today/Total visitor counter in footer via webhook",
+      "acceptance_criteria": [
+        "Counter displays in footer",
+        "Uses same webhook infrastructure",
+        "Non-intrusive styling"
+      ]
+    },
+    {
+      "id": "F011",
+      "name": "Vercel Deployment",
+      "priority": "P1",
+      "status": "in-progress",
+      "description": "Deploy to Vercel free tier",
+      "acceptance_criteria": [
+        "Project linked to Vercel",
+        "Connected to GitHub repo",
+        "Deploys on push (pending daily limit reset)"
+      ]
+    },
+    {
+      "id": "F012",
+      "name": "Speaker Diarization (Basic)",
+      "priority": "P2",
+      "status": "pending",
+      "description": "Best-effort speaker differentiation",
+      "acceptance_criteria": [
+        "Label speakers where possible"
+      ]
+    },
+    {
+      "id": "F013",
+      "name": "Multiple Output Formats",
+      "priority": "P2",
+      "status": "complete",
+      "description": "Download as .txt, .srt, .vtt",
+      "acceptance_criteria": [
+        "TXT download works",
+        "SRT download works",
+        "VTT download works"
+      ]
+    },
+    {
+      "id": "F014",
+      "name": "History (Local Storage)",
+      "priority": "P2",
+      "status": "complete",
+      "description": "Save last 10 transcriptions in localStorage",
+      "acceptance_criteria": [
+        "Transcriptions saved to localStorage",
+        "History accessible"
+      ]
+    },
+    {
+      "id": "F015",
+      "name": "Dark Mode",
+      "priority": "P2",
+      "status": "complete",
+      "description": "Toggle dark mode with localStorage persistence",
+      "acceptance_criteria": [
+        "Toggle in header",
+        "Preference saved",
+        "Smooth transition"
+      ]
+    },
+    {
+      "id": "F016",
+      "name": "PWA Support",
+      "priority": "P2",
+      "status": "pending",
+      "description": "Installable web app with manifest and offline support",
+      "acceptance_criteria": [
+        "manifest.json present",
+        "App installable",
+        "Offline model support"
+      ]
+    }
+  ]
+}

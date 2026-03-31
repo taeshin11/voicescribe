@@ -7,6 +7,7 @@ import HowItWorks from "@/components/HowItWorks";
 import TranscriptionResult from "@/components/TranscriptionResult";
 import FAQ from "@/components/FAQ";
 import SupportedFormats from "@/components/SupportedFormats";
+import History from "@/components/History";
 import Footer from "@/components/Footer";
 import AdBanner from "@/components/AdBanner";
 import { TranscriptionSegment } from "@/lib/types";
@@ -89,6 +90,16 @@ export default function Home() {
             modelUsed={modelUsed}
           />
         )}
+
+        <History
+          onRestore={(segments, fileName, dur, lang) => {
+            setSegments(segments);
+            setFileName(fileName);
+            setDuration(dur);
+            setDetectedLanguage(lang);
+            setHasResult(true);
+          }}
+        />
 
         <HowItWorks />
 

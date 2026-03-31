@@ -147,6 +147,7 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#6366F1" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="manifest" href="/manifest.json" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
