@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://voicescribe-app.vercel.app"),
+  metadataBase: new URL("https://voicescribe-app-beta.vercel.app"),
   title: "VoiceScribe — Free Audio & Video Transcription Online",
   description:
     "Free browser-based audio and video transcription. Convert MP4, M4A, MP3, WAV files to text instantly. No upload, no sign-up. 무료 음성 텍스트 변환, 녹음 파일 텍스트 변환.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "VoiceScribe — Free Audio & Video Transcription Online",
     description:
       "Upload. Transcribe. Download. Free audio & video transcription in seconds. No sign-up required.",
-    url: "https://voicescribe-app.vercel.app",
+    url: "https://voicescribe-app-beta.vercel.app",
     siteName: "VoiceScribe",
     type: "website",
     locale: "en_US",
@@ -46,10 +46,10 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://voicescribe-app.vercel.app",
+    canonical: "https://voicescribe-app-beta.vercel.app",
     languages: {
-      "en-US": "https://voicescribe-app.vercel.app",
-      "ko-KR": "https://voicescribe-app.vercel.app",
+      "en-US": "https://voicescribe-app-beta.vercel.app",
+      "ko-KR": "https://voicescribe-app-beta.vercel.app",
     },
   },
   robots: {
@@ -78,7 +78,7 @@ const jsonLd = {
   },
   description:
     "Free browser-based audio and video transcription tool. Convert audio and video files to text instantly using AI.",
-  url: "https://voicescribe-app.vercel.app",
+  url: "https://voicescribe-app-beta.vercel.app",
   featureList: [
     "Audio transcription",
     "Video transcription",
