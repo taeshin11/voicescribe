@@ -2,26 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F8FAFB;
+  --foreground: #1A202C;
+  --card-bg: #FFFFFF;
+  --secondary-bg: #EEF2F6;
+  --border-color: #E2E8F0;
+  --text-secondary: #64748B;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: #0F172A;
+  --foreground: #E2E8F0;
+  --card-bg: #1E293B;
+  --secondary-bg: #1E293B;
+  --border-color: #334155;
+  --text-secondary: #94A3B8;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #CBD5E1 transparent;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Smooth transitions for dark mode */
+.transition-theme {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Upload zone animation */
+@keyframes pulse-border {
+  0%, 100% { border-color: #6366F1; }
+  50% { border-color: #A5B4FC; }
+}
+
+.upload-zone-active {
+  animation: pulse-border 1.5s ease-in-out infinite;
+}
+
+/* Progress bar animation */
+@keyframes progress-shine {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.progress-bar-animated {
+  background: linear-gradient(90deg, #6366F1 0%, #818CF8 50%, #6366F1 100%);
+  background-size: 200% 100%;
+  animation: progress-shine 2s linear infinite;
 }
