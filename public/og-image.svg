@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4F46E5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#backgroundGradient)" />
+
+  <!-- Decorative accent circles -->
+  <circle cx="1100" cy="80" r="150" fill="rgba(255, 255, 255, 0.1)" />
+  <circle cx="100" cy="550" r="120" fill="rgba(255, 255, 255, 0.08)" />
+
+  <!-- Microphone Icon -->
+  <g transform="translate(150, 180)">
+    <!-- Microphone body -->
+    <ellipse cx="0" cy="0" rx="35" ry="45" fill="none" stroke="white" stroke-width="4" />
+
+    <!-- Microphone capsule -->
+    <ellipse cx="0" cy="-40" rx="30" ry="35" fill="white" opacity="0.9" />
+
+    <!-- Microphone stand -->
+    <rect x="-3" y="45" width="6" height="60" fill="white" />
+
+    <!-- Microphone base -->
+    <ellipse cx="0" cy="120" rx="40" ry="12" fill="white" opacity="0.8" />
+
+    <!-- Sound waves -->
+    <path d="M 55 -30 Q 75 -50 95 -30" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" />
+    <path d="M 60 0 Q 85 -25 110 0" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" />
+    <path d="M 55 30 Q 75 5 95 30" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- Main Title "VoiceScribe" -->
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="96" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="-2">
+    VoiceScribe
+  </text>
+
+  <!-- Subtitle "Free Audio & Video Transcription" -->
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="48" fill="white" text-anchor="middle" opacity="0.95" letter-spacing="0.5">
+    Free Audio &amp; Video Transcription
+  </text>
+
+  <!-- Subtle divider line -->
+  <line x1="350" y1="410" x2="850" y2="410" stroke="white" stroke-width="2" opacity="0.3" />
+
+  <!-- Bottom tagline (optional, subtle) -->
+  <text x="600" y="510" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle" opacity="0.8">
+    Convert Speech to Text Instantly
+  </text>
+</svg>
